@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import About from '../About';
+import Project from '../Project';
 
 function Header() {
     //these links don't go anywhere yet
-    
+
   const navElements = [
     { name: 'About Me', href: '#about'},
-    { name: 'Portfolio', href: '#portfolio'},
+    { name: 'Portfolio', href: '#project'},
     { name: 'Resume', href: '#resume'}
   ];
 
