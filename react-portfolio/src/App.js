@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -28,8 +29,9 @@ function App() {
         <Home></Home>
         <About></About>
         <Portfolio ></Portfolio>
-        <Contact></Contact>
+        <Contact></Contact> 
       </main>
+      <Footer></Footer>
     </div>
   );
 }

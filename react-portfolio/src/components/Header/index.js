@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons'; 
 // import About from '../About';
 // import Portfolio from '../Portfolio';
 
@@ -15,12 +17,13 @@ function Header(props) {
     }, [currentNavEl]);
 
   return (
-    <header className='flex-row px-1'>
+    <header className='flex-row px-1' >
+        {/* <h1>Felicity Brammer</h1> */}
         <h2>
             <a data-testid='link' href='/'>
                 <span role='img' aria-label='code'>
                     {' '}
-                    <i className="fas fa-code fa-2x"></i>
+                    <FontAwesomeIcon icon={faCode} />
                 </span>
             </a>
         </h2>
