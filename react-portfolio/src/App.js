@@ -1,18 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import About from './components/About';
 import Header from './components/Header';
 import Home from './components/Home';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+
 import './App.css';
 
 function App() {
+  const [navElements] = useState([
+    { name: 'About Me', href: '#about'},
+    { name: 'Portfolio', href: '#portfolio'},
+    { name: 'Resume', href: '#resume'}
+  ]);
+
+  const [currentNavEl, setCurrentNavEl] = useState(navElements[0]);
+
+
   return (
     <div>
-      <Header></Header>
+      <Header
+        navElements={navElements}
+        setCurrentNavEl={setCurrentNavEl}
+        currentNavEl={currentNavEl}
+      ></Header>
       <main>  
         <Home></Home>
         <About></About>
-        <Project></Project>
+        <Portfolio ></Portfolio>
+        <Contact></Contact>
       </main>
     </div>
   );

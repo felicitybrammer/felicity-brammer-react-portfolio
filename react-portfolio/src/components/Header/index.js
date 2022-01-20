@@ -1,35 +1,41 @@
-import React, { useState } from 'react';
-import About from '../About';
-import Project from '../Project';
+import React, { useEffect } from 'react';
+// import About from '../About';
+// import Portfolio from '../Portfolio';
 
-function Header() {
-    //these links don't go anywhere yet
+function Header(props) {
+ 
+  const {
+      navElements = [],
+      setCurrentNavEl,
+      currentNavEl,
+    } = props;
 
-  const navElements = [
-    { name: 'About Me', href: '#about'},
-    { name: 'Portfolio', href: '#project'},
-    { name: 'Resume', href: '#resume'}
-  ];
-
-  function navElSelected(name) {
-      console.log(`${name} clicked`) //works!
-  }
+    useEffect(() => {
+        document.title = currentNavEl.name;
+    }, [currentNavEl]);
 
   return (
-    <header>
+    <header className='flex-row px-1'>
         <h2>
-            <a href='/'>
-                <span role='img' aria-label='code'><i className="fas fa-code fa-2x"></i></span>
+            <a data-testid='link' href='/'>
+                <span role='img' aria-label='code'>
+                    {' '}
+                    <i className="fas fa-code fa-2x"></i>
+                </span>
             </a>
         </h2>
         <nav>
             <ul className='flex-row'>
                 {navElements.map ((navElement) => (
                     <li
-                        className='mx-2'
-                        key={navElement.name}
+                        className={`mx-2 ${
+                        currentNavEl.name === navElement.name && 'navActive'
+                        }`} key={navElement.name}
                         >
-                            <span onClick={navElSelected(navElement.name)} >
+                            <span onClick={() => {
+                                setCurrentNavEl(navElement)
+                            }} 
+                            >
                                 <a href={navElement.href}>
                                     <span>{navElement.name}</span>
                                 </a>

@@ -1,27 +1,41 @@
-import React from 'react';
-import screenshot from '../../assets/images/portfolio-item-images/Ranter.png';
+import React, { useState } from "react";
+//import projects from '../Portfolio/projects';
+
 
 function Project(props) {
-    const currentProject = {
-        title: "Ranter",
-        link1: 'link',
-        link2: 'link'
-    };
+
+  const {
+    id,
+    url,
+    github,
+    title,
+    tech
+  } = props.project;
 
     return (
-        <section>
-            <h1>{currentProject.title}</h1>
-            <p>{currentProject.link1}</p>
-            <p>{currentProject.link2}</p>
-            <div className="flex-row">
-          <img
-            src={screenshot}
-            alt=""
-            className="img-thumbnail mx-1"
-          />
-      </div>
-        </section>
-    );
+        <div className="flex-row">
+            {/* {currentProject.map((project) => {
+                <div key={currentProject.title}>
+                    <h1 data-testid='h1tag'>{project.title}</h1>
+                    <p>{currentProject.deployed}</p>
+                    <p>{currentProject.github}</p>
+                    <img
+                        src={require(currentProject.screenshot)}
+                        alt="project screenshot"
+                    />
+                </div>
+                })
+            } */}
+
+            <a className="project" id={id} target="_blank"
+                href={url}>
+                    <h3>{title}</h3>
+                    <p>{tech}</p>
+                    <a href={github} target="_blank">View GitHub Repo</a>
+            </a>
+             
+        </div>
+    )
 }
 
 export default Project;
