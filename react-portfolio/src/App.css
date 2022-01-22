@@ -1,4 +1,17 @@
-.App {
+.navActive {
+  background-color: yellow;
+}
+
+header {
+  flex-direction: row;
+  display: inline;
+}
+
+nav {
+  display: inline;
+  list-style: none;
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +48,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

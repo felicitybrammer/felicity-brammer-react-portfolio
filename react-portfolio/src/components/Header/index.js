@@ -1,8 +1,26 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons'; 
+import { capitalizeFirstLetter } from "../../utils/helpers";
 // import About from '../About';
 // import Portfolio from '../Portfolio';
+
+
+
+// export class NavBar extends React.Component {
+//   render() {
+//     const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
+//     const navLinks = pages.map(page => {
+//       return (
+//         <a href={'/' + page}>
+//           {page}
+//         </a>
+//       )
+//     });
+
+//     return <nav>{navLinks}</nav>;
+//   }
+// }
 
 function Header(props) {
  
@@ -12,9 +30,9 @@ function Header(props) {
       currentNavEl,
     } = props;
 
-    useEffect(() => {
-        document.title = currentNavEl.name;
-    }, [currentNavEl]);
+    // useEffect(() => {
+    //     document.title = currentNavEl.name;
+    // }, [currentNavEl]);
 
   return (
     <header className='flex-row px-1' >
@@ -40,7 +58,7 @@ function Header(props) {
                             }} 
                             >
                                 <a href={navElement.href}>
-                                    <span>{navElement.name}</span>
+                                    <span>{capitalizeFirstLetter(navElement.name)}</span>
                                 </a>
                             </span>
                         </li>
@@ -60,9 +78,9 @@ function Header(props) {
                         Resume
                     </a>
                 </li> */}
-                <li>
+                {/* <li>
                     <span>Contact</span>
-                </li>
+                </li> */}
 
             </ul>
         </nav>

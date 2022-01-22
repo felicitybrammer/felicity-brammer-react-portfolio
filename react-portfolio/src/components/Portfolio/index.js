@@ -10,7 +10,7 @@ function Portfolio(props) {
   
     return (
         <section>
-            <h1>My Work</h1>
+            <h1 id='portfolio'>My Work</h1>
             
             <div className="flex-row">
               {projects.map((project) => (
