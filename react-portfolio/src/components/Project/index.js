@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-//import projects from '../Portfolio/projects';
+import React from "react";
+// import image from '../../assets/css/images-links.css'
 
 
 function Project(props) {
@@ -9,31 +9,19 @@ function Project(props) {
     url,
     github,
     title,
-    tech
+    tech,
+    image
   } = props.project;
 
     return (
         <div className="flex-row">
-            {/* {currentProject.map((project) => {
-                <div key={currentProject.title}>
-                    <h1 data-testid='h1tag'>{project.title}</h1>
-                    <p>{currentProject.deployed}</p>
-                    <p>{currentProject.github}</p>
-                    <img
-                        src={require(currentProject.screenshot)}
-                        alt="project screenshot"
-                    />
-                </div>
-                })
-            } */}
 
-            <a className="project" id={id} target="_blank"
-                href={url}>
-                    <h3>{title}</h3>
-                    <p>{tech}</p>
-                    <a href={github} target="_blank">View GitHub Repo</a>
+            <a className="project" id={id} target="_blank" rel="noreferrer" href={url}>
+                <img src={image}/>
             </a>
-             
+            <h3>{title}</h3>
+            <p>{tech}</p>
+            <a href={github} target="_blank" rel="noreferrer">View GitHub Repo</a>   
         </div>
     )
 }

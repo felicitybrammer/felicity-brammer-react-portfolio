@@ -2,7 +2,7 @@ import React from 'react';
 import Project from '../Project';
 
 
-import image from '../../assets/css/images-links.css'
+// import image from '../../assets/css/images-links.css'
 import projects from './projects';
 
 //no state needed here

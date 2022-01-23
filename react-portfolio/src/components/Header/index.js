@@ -1,31 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons'; 
-import { capitalizeFirstLetter } from "../../utils/helpers";
-// import About from '../About';
-// import Portfolio from '../Portfolio';
+// import { capitalizeFirstLetter } from "../../utils/helpers";
 
-
-
-// export class NavBar extends React.Component {
-//   render() {
-//     const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
-//     const navLinks = pages.map(page => {
-//       return (
-//         <a href={'/' + page}>
-//           {page}
-//         </a>
-//       )
-//     });
-
-//     return <nav>{navLinks}</nav>;
-//   }
-// }
 
 function Header(props) {
  
   const {
-      navElements = [],
+    //   navElements = [],
       setCurrentNavEl,
       currentNavEl,
     } = props;
@@ -36,18 +18,15 @@ function Header(props) {
 
   return (
     <header className='flex-row px-1' >
-        {/* <h1>Felicity Brammer</h1> */}
-        <h2>
-            <a data-testid='link' href='/'>
-                <span role='img' aria-label='code'>
-                    {' '}
-                    <FontAwesomeIcon icon={faCode} />
-                </span>
-            </a>
-        </h2>
+        <a href='/'>
+            <span role='img' aria-label='code'>
+                {' '}
+                <FontAwesomeIcon icon={faCode} />
+            </span>
+        </a>
         <nav>
             <ul className='flex-row'>
-                {navElements.map ((navElement) => (
+                {/* {navElements.map ((navElement) => (
                     <li
                         className={`mx-2 ${
                         currentNavEl.name === navElement.name && 'navActive'
@@ -62,25 +41,19 @@ function Header(props) {
                                 </a>
                             </span>
                         </li>
-                ))}
-                {/* <li className='mx-2'>
-                    <a href='#about'>
-                        About Me
-                    </a>
+                ))} */}
+                <li className={currentNavEl === 'About Me' ? 'mx-2 navActive' : 'mx-2'}>
+                    <span onClick={() => setCurrentNavEl('About Me')}>About Me</span>
                 </li>
-                <li className='mx-2'>
-                    <a href='#portfolio'>
-                        Portfolio
-                    </a>
+                <li className={currentNavEl === 'Portfolio' ? 'mx-2 navActive' : 'mx-2'}>
+                    <span onClick={() => setCurrentNavEl('Portfolio')}>Portfolio</span>
                 </li>
-                <li className='mx-2'>
-                    <a href='#resume'>
-                        Resume
-                    </a>
-                </li> */}
-                {/* <li>
-                    <span>Contact</span>
-                </li> */}
+                <li className={currentNavEl === 'Resume' ? 'mx-2 navActive' : 'mx-2'}>
+                <span onClick={() => setCurrentNavEl('Resume')}>Resume</span>
+                </li>
+                <li className={currentNavEl === 'Contact Me' ? 'mx-2 navActive' : 'mx-2'}>
+                <span onClick={() => setCurrentNavEl('Contact Me')}>Contact Me</span>
+                </li>
 
             </ul>
         </nav>

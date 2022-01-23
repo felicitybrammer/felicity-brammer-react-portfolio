@@ -6,35 +6,46 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
-
 import './App.css';
 
 function App() {
-  const [navElements] = useState([
-    { name: 'About Me', href: '#about'},
-    { name: 'Portfolio', href: '#portfolio'},
-    { name: 'Resume', href:'#resume'},
-    { name: 'Contact Me', href: '#contact'}
-  ]);
+  // const [navElements] = useState([
+  //   { name: 'About Me', href: '#about'},
+  //   { name: 'Portfolio', href: '#portfolio'},
+  //   { name: 'Resume', href:'#resume'},
+  //   { name: 'Contact Me', href: '#contact'}
+  // ]);
 
-  const [currentNavEl, setCurrentNavEl] = useState(navElements[0]);
+  const [currentNavEl, setCurrentNavEl] = useState('Home');
 
+  const renderPage = () => {
+    switch (currentNavEl) {
+      case 'About Me':
+        return <About/>;
+      case 'Portfolio':
+        return <Portfolio/>
+      case 'Resume':
+        return <Resume/>
+      case 'Contact Me':
+        return <Contact/>
+      default:
+        return <Home/>
+    }
+  }
 
   return (
     <div>
-      <Header
-        navElements={navElements}
-        setCurrentNavEl={setCurrentNavEl}
-        currentNavEl={currentNavEl}
-      ></Header>
-      <main>  
-        <Home></Home>
-        <About></About>
-        <Resume></Resume>
-        <Portfolio ></Portfolio>
-        <Contact></Contact> 
-      </main>
-      <Footer></Footer>
+        <Header
+          // navElements={navElements}
+          setCurrentNavEl={setCurrentNavEl}
+          currentNavEl={currentNavEl}
+        ></Header>
+        <div className='container'> 
+         
+          {renderPage(currentNavEl)}
+        </div>
+        <Footer></Footer>
+
     </div>
   );
 }
