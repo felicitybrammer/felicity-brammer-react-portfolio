@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
             <h1>Hi, I'm Felicity Brammer</h1>
-            <img src={headshot} className='my-2' alt='headshot' />
+            <img src={headshot} className='my-2 center' alt='headshot' />
             <h2>Full Stack Developer</h2>
         </div>
     );

@@ -14,7 +14,7 @@ function Project(props) {
   } = props.project;
 
     return (
-        <div className="flex-row">
+        <div className="flex-row card">
 
             <a className="project" id={id} target="_blank" rel="noreferrer" href={url}>
                 <img src={image}/>
