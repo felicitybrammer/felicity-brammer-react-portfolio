@@ -1,6 +1,13 @@
 import React from "react";
-//import image from '../../assets/css/images-links.css'
 
+
+// import '../../assets/images/portfolio-item-images/project-ranter.png';
+// import '../../assets/images/portfolio-item-images/project-activity-music.png';
+// import '../../assets/images/portfolio-item-images/project-notetaker.png';
+// import '../../assets/images/portfolio-item-images/project-team-generator.png';
+// import '../../assets/images/portfolio-item-images/project-password-generator.png';
+// import '../../assets/images/portfolio-item-images/project-js-quiz.png';
+// import '../../assets/images/portfolio-item-images/project-budget-tracker.png';
 
 function Project(props) {
 
@@ -17,7 +24,11 @@ function Project(props) {
         <div className="flex-row card">
 
             <a className="project" id={id} target="_blank" rel="noreferrer" href={url}>
-                <img src={image}/>
+                 {/* <img 
+                    src={require('../../assets/images/portfolio-item-images/' + {image} + '.png')}
+                    alt={title}
+                />  */}
+              <img src={image} alt={title}/> 
             </a>
             <h3>{title}</h3>
             <p>{tech}</p>

@@ -1,4 +1,6 @@
-module.exports = [
+
+
+module.exports =   [
 
     {
         id: 'project-ranter',
@@ -6,15 +8,15 @@ module.exports = [
         github: 'https://github.com/felicitybrammer/Ranter',
         title: 'Ranter',
         tech: 'SQL/MVC/JavaScript',
-        image: './../images/portfolio-item-images/Ranter.png'
+        image: 'project-ranter.png'
     },
     {
-        id: 'project-train-to-the-beat',
+        id: 'project-activity-music',
         url: 'https://felicitybrammer.github.io/activity-music/',
         github: 'https://github.com/felicitybrammer/activity-music',
         title: 'Train to the Beat',
         tech: 'JavaScript/Server-side APIs/CSS',
-        image: './../images/portfolio-item-images/Song\ Detail\ List.png'
+        image: 'project-activity-music.png'
     },
     {
         id: 'project-notetaker',
@@ -22,14 +24,14 @@ module.exports = [
         github: 'https://github.com/felicitybrammer/never-forget-note-taker',
         title: 'Never Forget! Note Taker',
         tech: 'Express/NodeJS/JavaScript',
-        images: './../images/portfolio-item-images/note-taker.png'
+        images: 'project-notetaker.png'
     },
     {
         id: 'project-team-generator',
         url: 'https://github.com/felicitybrammer/generate-my-team-profile',
         title: 'Generate My Team Profile',
         tech: 'NodeJS/OOP/TDD',
-        image: './../images/portfolio-item-images/password-generator.png'
+        image: 'project-team-generator.png'
     },
     {
         id: 'project-password-generator',
@@ -37,7 +39,7 @@ module.exports = [
         github: 'https://felicitybrammer.github.io/supersecurity-password-generator/',
         title: 'SuperSecurity Password Generator',
         tech: 'JavaScript/CSS/HTML',
-        image: './../images/portfolio-item-images/password-generator.png'
+        image: 'project-password-generator.png'
     },
     {
         id: 'project-js-quiz',
@@ -45,7 +47,7 @@ module.exports = [
         github: 'https://github.com/felicitybrammer/challenge-yourself-js-quiz',
         title: 'Challenge Yourself! JS Quiz',
         tech: 'JavaScript/HTML/CSS',
-        image: './../images/portfolio-item-images/JSQuiz.png'
+        image: 'project-js-quiz.png'
     },
     {
         id: 'project-budget-tracker',
@@ -53,6 +55,7 @@ module.exports = [
         github: 'https://github.com/felicitybrammer/my-finance-budget-tracker',
         title: 'MyFinance! Budget Tracker',
         tech: 'MongoDB/Express',
-        image: './../images/portfolio-item-images/budget-tracker.png'
+        image: 'project-budget-tracker.png'
     },
 ];
+

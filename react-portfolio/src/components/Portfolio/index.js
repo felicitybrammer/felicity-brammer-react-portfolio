@@ -1,11 +1,8 @@
 import React from 'react';
 import Project from '../Project';
-
-
-// import image from '../../assets/css/images-links.css'
 import projects from './projects';
 
-//no state needed here
+
 function Portfolio(props) {
   
     return (
@@ -14,7 +11,9 @@ function Portfolio(props) {
             
             <div className="flex-row">
               {projects.map((project) => (
-                <Project project={project} key={project.id} />
+                <Project project={project} key={project.id}>
+                  <img src={require(`../../assets/images/${project.image}`)} alt={project.title}/>
+                 </Project>
               ))}
             </div>
         </section>
