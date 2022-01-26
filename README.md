@@ -2,9 +2,11 @@
 
 ## Description
 
+A web page to showcase my development work that was designed using React as a single page application.
+
 ## Website
 
-
+https://felicitybrammer.github.io/felicity-brammer-react-portfolio/
 
 ## Screenshot
 
