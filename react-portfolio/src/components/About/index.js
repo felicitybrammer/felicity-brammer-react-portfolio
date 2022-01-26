@@ -4,7 +4,7 @@ import headshot from '../../assets/images/headshot-dots.png';
 function About() {
     return (
         <section className='my-5'>
-            <img src={headshot} className='my-2' alt='headshot' />
+            {/* <img src={headshot} className='my-2' alt='headshot' /> */}
             <h1 id='about'>Who I am</h1>
             
             <p>I love math problems. I love them so much that I became a math teacher and taught teenagers to love math problems too. (Or, at least I taught them to laugh at my jokes)</p>
