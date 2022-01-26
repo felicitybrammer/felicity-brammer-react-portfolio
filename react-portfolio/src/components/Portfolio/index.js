@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '../Project';
-import projects from './projects';
+// import projects from './projects';
 
 
 function Portfolio(props) {
@@ -8,14 +8,15 @@ function Portfolio(props) {
     return (
         <section>
             <h1 id='portfolio'>My Work</h1>
+            <Project />
             
-            <div className="flex-row">
+            {/* <div className="flex-row">
               {projects.map((project) => (
                 <Project project={project} key={project.id}>
                   <img src={require(`../../assets/images/${project.image}`)} alt={project.title}/>
                  </Project>
               ))}
-            </div>
+            </div> */}
         </section>
     );
 }

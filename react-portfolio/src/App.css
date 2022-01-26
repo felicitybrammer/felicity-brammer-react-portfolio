@@ -48,6 +48,10 @@ img {
 #resume a {
   padding: 2.5rem;
   margin: 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--tertiary);
 }
 
 .flex-row .card {
@@ -144,8 +148,9 @@ p {
 }
 
 a {
-  color: var(--secondary);
+  color: var(--tertiary);
   text-decoration: none;
+  text-align: center;
 }
 
 a:visited {
@@ -231,16 +236,16 @@ footer {
 }
 
 .btn {
-  border: 2px solid var(--primary);
+  border: 2px solid var(--tertiary);
   border-radius: 30px;
-  background-color: var(--primary);
+  background-color: var(--tertiary);
   padding: var(--spacing-two) var(--spacing-three);
   color: var(--light);
   font-size: 1.1rem;
 }
 
 .btn:hover {
-  color: var(--primary);
+  color: var(--tertiary);
   background-color: var(--secondary);
 }
 

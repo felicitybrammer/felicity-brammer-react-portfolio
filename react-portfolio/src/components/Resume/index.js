@@ -12,7 +12,7 @@ function Resume() {
                 <li>✦ Open to evolving in: Java, Python and many more</li>
             </ul>
             <br /><br /><br /><br />
-            <a className='center' href={require('../../assets/tech-resume.pdf')}>Take a look at my Resume</a>
+            <a href={require('../../assets/tech-resume.pdf')}>Take a look at my Resume</a>
         </div>
     )
 

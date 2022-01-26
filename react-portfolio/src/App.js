@@ -9,12 +9,7 @@ import Resume from './components/Resume';
 import './App.css';
 
 function App() {
-  // const [navElements] = useState([
-  //   { name: 'About Me', href: '#about'},
-  //   { name: 'Portfolio', href: '#portfolio'},
-  //   { name: 'Resume', href:'#resume'},
-  //   { name: 'Contact Me', href: '#contact'}
-  // ]);
+ 
 
   const [currentNavEl, setCurrentNavEl] = useState('Home');
 
