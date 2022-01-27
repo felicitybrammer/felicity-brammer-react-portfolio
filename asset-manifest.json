@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.f7273c58.css",
-    "main.js": "/react-portfolio/static/js/main.20a1001c.js",
-    "static/js/787.8c081f57.chunk.js": "/react-portfolio/static/js/787.8c081f57.chunk.js",
-    "static/media/headshot-dots.png": "/react-portfolio/static/media/headshot-dots.f180ce06bb63860927a3.png",
-    "static/media/project-activity-music.png": "/react-portfolio/static/media/project-activity-music.71cf331fc5db8e80ab5d.png",
-    "static/media/tech-resume.pdf": "/react-portfolio/static/media/tech-resume.7dd28277f4bf12be91a6.pdf",
-    "static/media/project-budget-tracker.png": "/react-portfolio/static/media/project-budget-tracker.54bff00749f884b097a8.png",
-    "static/media/project-ranter.png": "/react-portfolio/static/media/project-ranter.468daf25a592b7aa4d5a.png",
-    "static/media/project-team-generator.png": "/react-portfolio/static/media/project-team-generator.e11d8af54d61356f2ae6.png",
-    "static/media/project-js-quiz.png": "/react-portfolio/static/media/project-js-quiz.6b6539471fec3a922487.png",
-    "static/media/project-password-generator.png": "/react-portfolio/static/media/project-password-generator.6e82b472e0816bf844a2.png",
-    "static/media/project-notetaker.png": "/react-portfolio/static/media/project-notetaker.9b565ae4c1b00b697110.png",
-    "index.html": "/react-portfolio/index.html",
-    "main.f7273c58.css.map": "/react-portfolio/static/css/main.f7273c58.css.map",
-    "main.20a1001c.js.map": "/react-portfolio/static/js/main.20a1001c.js.map",
-    "787.8c081f57.chunk.js.map": "/react-portfolio/static/js/787.8c081f57.chunk.js.map"
+    "main.css": "/felicity-brammer-react-portfolio/static/css/main.f7273c58.css",
+    "main.js": "/felicity-brammer-react-portfolio/static/js/main.6ea25409.js",
+    "static/js/787.8c081f57.chunk.js": "/felicity-brammer-react-portfolio/static/js/787.8c081f57.chunk.js",
+    "static/media/headshot-dots.png": "/felicity-brammer-react-portfolio/static/media/headshot-dots.f180ce06bb63860927a3.png",
+    "static/media/project-activity-music.png": "/felicity-brammer-react-portfolio/static/media/project-activity-music.71cf331fc5db8e80ab5d.png",
+    "static/media/tech-resume.pdf": "/felicity-brammer-react-portfolio/static/media/tech-resume.7dd28277f4bf12be91a6.pdf",
+    "static/media/project-budget-tracker.png": "/felicity-brammer-react-portfolio/static/media/project-budget-tracker.54bff00749f884b097a8.png",
+    "static/media/project-ranter.png": "/felicity-brammer-react-portfolio/static/media/project-ranter.468daf25a592b7aa4d5a.png",
+    "static/media/project-team-generator.png": "/felicity-brammer-react-portfolio/static/media/project-team-generator.e11d8af54d61356f2ae6.png",
+    "static/media/project-js-quiz.png": "/felicity-brammer-react-portfolio/static/media/project-js-quiz.6b6539471fec3a922487.png",
+    "static/media/project-password-generator.png": "/felicity-brammer-react-portfolio/static/media/project-password-generator.6e82b472e0816bf844a2.png",
+    "static/media/project-notetaker.png": "/felicity-brammer-react-portfolio/static/media/project-notetaker.9b565ae4c1b00b697110.png",
+    "index.html": "/felicity-brammer-react-portfolio/index.html",
+    "main.f7273c58.css.map": "/felicity-brammer-react-portfolio/static/css/main.f7273c58.css.map",
+    "main.6ea25409.js.map": "/felicity-brammer-react-portfolio/static/js/main.6ea25409.js.map",
+    "787.8c081f57.chunk.js.map": "/felicity-brammer-react-portfolio/static/js/787.8c081f57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7273c58.css",
-    "static/js/main.20a1001c.js"
+    "static/js/main.6ea25409.js"
   ]
 }
