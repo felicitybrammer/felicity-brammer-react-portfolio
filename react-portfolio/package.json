@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "http://felicitybrammer.github.io/felicity-brammer-react-portfolio",
+  "homepage": "https://felicitybrammer.github.io/felicity-brammer-react-portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
