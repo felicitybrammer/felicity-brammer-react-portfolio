@@ -6,7 +6,7 @@ A web page to showcase my development work that was designed using React as a si
 
 ## Website
 
-https://felicitybrammer.github.io/react-portfolio/
+https://felicitybrammer.github.io/felicity-brammer-react-portfolio/
 
 ## Screenshot
 
