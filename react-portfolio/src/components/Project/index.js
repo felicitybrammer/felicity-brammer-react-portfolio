@@ -6,6 +6,15 @@ function Project() {
 
   const projects = [
     {
+      id: 'project-okcreature',
+      url: 'https://okcreature.herokuapp.com/',
+      image: 'project-okcreature.png',
+      title: 'okCreature',
+      tech: 'React/MongoDB/GraphQL',
+      github: 'https://github.com/felicitybrammer/pet-matcher'
+
+    },
+    {
         id: 'project-ranter',
         url: 'https://ranter2-0.herokuapp.com/login',
         image: 'project-ranter.png',
