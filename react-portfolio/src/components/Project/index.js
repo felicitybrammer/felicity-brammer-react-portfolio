@@ -8,8 +8,8 @@ function Project() {
     {
       id: 'project-okcreature',
       url: 'https://okcreature.herokuapp.com/',
-      image: 'project-okcreature.png',
-      title: 'okCreature',
+      image: 'project-okcreature.jpeg',
+      title: 'OkCreature',
       tech: 'React/MongoDB/GraphQL',
       github: 'https://github.com/felicitybrammer/pet-matcher'
 
