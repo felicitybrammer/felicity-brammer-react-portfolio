@@ -75,7 +75,7 @@ function Project() {
       <div className="flex-row card">
         {projects.map((info) => (
           <div>
-            <Card className="text-center" bg="secondary">
+            <Card className=" flex-row" >
                 <Card.Img variant="top" src={require(`../../assets/images/${info.image}`)} alt={info.title}/>
                   <Card.Body>
                     <Card.Title>{info.title}</Card.Title>

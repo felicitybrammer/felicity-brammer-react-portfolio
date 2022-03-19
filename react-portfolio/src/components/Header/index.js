@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons'; 
-// import { capitalizeFirstLetter } from "../../utils/helpers";
 
 
 function Header(props) {
@@ -12,36 +11,19 @@ function Header(props) {
       currentNavEl,
     } = props;
 
-    // useEffect(() => {
-    //     document.title = currentNavEl.name;
-    // }, [currentNavEl]);
+    
 
   return (
-    <header className='flex-row px-1' >
-        {/* <a href='/'> */}
+    <header className='flex flex-row flex-wrap:wrap' >
+        
             <span role='img' aria-label='code'>
                 {' '}
                 <FontAwesomeIcon icon={faCode} />
             </span>
-        {/* </a> */}
+        
         <nav>
-            <ul className='flex-row'>
-                {/* {navElements.map ((navElement) => (
-                    <li
-                        className={`mx-2 ${
-                        currentNavEl.name === navElement.name && 'navActive'
-                        }`} key={navElement.name}
-                        >
-                            <span onClick={() => {
-                                setCurrentNavEl(navElement)
-                            }} 
-                            >
-                                <a href={navElement.href}>
-                                    <span>{capitalizeFirstLetter(navElement.name)}</span>
-                                </a>
-                            </span>
-                        </li>
-                ))} */}
+            <ul className='flex flex-row flex-wrap:wrap '>
+                
                 <li className={currentNavEl === 'Home' ? 'mx-2 navActive' : 'mx-2'}>
                     <span onClick={() => setCurrentNavEl('Home')}>Home</span>
                 </li>
