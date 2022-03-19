@@ -18,12 +18,12 @@ function Header(props) {
 
   return (
     <header className='flex-row px-1' >
-        <a href='/'>
+        {/* <a href='/'> */}
             <span role='img' aria-label='code'>
                 {' '}
                 <FontAwesomeIcon icon={faCode} />
             </span>
-        </a>
+        {/* </a> */}
         <nav>
             <ul className='flex-row'>
                 {/* {navElements.map ((navElement) => (
@@ -42,6 +42,9 @@ function Header(props) {
                             </span>
                         </li>
                 ))} */}
+                <li className={currentNavEl === 'Home' ? 'mx-2 navActive' : 'mx-2'}>
+                    <span onClick={() => setCurrentNavEl('Home')}>Home</span>
+                </li>
                 <li className={currentNavEl === 'About Me' ? 'mx-2 navActive' : 'mx-2'}>
                     <span onClick={() => setCurrentNavEl('About Me')}>About Me</span>
                 </li>
